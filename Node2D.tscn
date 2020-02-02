@@ -1,0 +1,90 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Resource.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Crack.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Root.cs" type="Script" id=4]
+[ext_resource path="res://assets/font/Comfortaa-Bold.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://MainScreen.cs" type="Script" id=8]
+[ext_resource path="res://newMap.tscn" type="PackedScene" id=9]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 1226.27, 925.989, 1247.08, 953.995, 1225.65, 1002.69, 1192.53, 1026.07, 933.447, 1065.03, 892.539, 1033.86, 900.331, 979.319, 915.371, 933.392, 1185.56, 888.977, 873.059, 1000.75, 514.623, 1061.14, 530.208, 1028.02, 372.418, 942.306, 403.586, 905.294, 1291.88, 607.247, 1280.19, 638.415, 1252.92, 661.792, 1212.01, 655.948, 1182.79, 632.571, 1188.64, 585.819, 1221.75, 562.443, 1256.82, 548.807, 1266.56, 332.576, 1309.42, 336.473, 1744.45, 263.468, 1696.33, 209.8, 1711.14, 132.074, 1790.71, 91.3605, 1827.59, 110.502, 1868.5, 159.203, 1868.5, 219.591, 1821.74, 258.552, 1794.47, 262.448, 1757.4, 270.87, 1765.25, 428.029, 1731.49, 435.576, 1511.27, 833.458, 1494.61, 779.79, 1487.21, 652.098, 1539.03, 537.359, 1638.96, 463.335, 1773.04, 443.614, 1537.33, 866.334, 49.0469, 424.133, 56.8389, 346.213, 313.977, 13.1014, 411.378, 7.25735, 475.663, 81.2821, 462.027, 170.891, 436.703, 200.111, 399.69, 227.383, 1188.64, 147.515, 1229.55, 67.6459, 1334.74, 38.4257, 1422.4, 96.8662, 1465.26, 192.319, 1439.93, 281.928, 1356.17, 342.317, 1182.79, 246.864, 1206.17, 291.668, 1180.85, 258.552, 958.772, 387.121, 999.68, 412.445, 984.096, 410.497, 598.388, 383.225, 613.972, 350.109, 662.673, 320.888, 781.502, 291.668, 886.695, 320.888, 978.252, 435.821, 795.138, 743.608, 763.97, 743.608, 652.933, 712.44, 584.752, 642.311, 549.688, 539.066, 952.928, 646.208, 859.423, 733.868, 830.202, 733.868, 208.784, 665.688, 319.821, 661.792, 405.534, 718.284, 432.807, 827.373, 296.445, 973.475, 200.992, 950.098, 134.76, 881.918, 130.864, 763.089, 169.824, 692.96, 148.396, 511.794, 193.2, 488.418, 95.7993, 488.418, 226.317, 480.626, 436.703, 239.072, 563.324, 422.185, 997.732, 537.118, 812.67, 753.349, 1872.39, 484.522, 1965.9, 587.767, 1995.12, 735.816, 1944.47, 854.646, 1849.02, 934.514, 1728.24, 959.839, 1615.25, 928.67 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7, 8 ), PoolIntArray( 9, 6, 5 ), PoolIntArray( 9, 5, 10, 11 ), PoolIntArray( 11, 10, 12, 13 ), PoolIntArray( 14, 15, 16, 17, 18, 19, 20, 21 ), PoolIntArray( 21, 20, 22, 23 ), PoolIntArray( 24, 25, 26, 27, 28, 29, 30, 31, 32 ), PoolIntArray( 33, 24, 32 ), PoolIntArray( 33, 32, 34, 35 ), PoolIntArray( 36, 37, 38, 39, 40, 35, 34, 41, 42 ), PoolIntArray( 43, 44, 45, 46, 47, 48, 49, 50 ), PoolIntArray( 51, 52, 53, 54, 55, 56, 57, 23, 58 ), PoolIntArray( 58, 23, 22, 59, 60 ), PoolIntArray( 61, 60, 59, 62, 63 ), PoolIntArray( 64, 65, 66, 67, 68, 61, 63, 69, 70, 71, 72, 73, 74 ), PoolIntArray( 75, 76, 77 ), PoolIntArray( 78, 79, 80, 81, 13, 12, 82, 83, 84, 85, 86 ), PoolIntArray( 78, 86, 87, 88 ), PoolIntArray( 88, 87, 89, 43, 50 ), PoolIntArray( 50, 90, 88 ), PoolIntArray( 91, 50, 49 ), PoolIntArray( 91, 49, 65, 64 ), PoolIntArray( 74, 92, 64 ), PoolIntArray( 70, 69, 93, 75, 77 ), PoolIntArray( 94, 70, 77 ), PoolIntArray( 94, 77, 7, 6 ), PoolIntArray( 1, 0, 36, 42 ), PoolIntArray( 95, 96, 97, 98, 99, 100, 101, 42, 41 ) ]
+outlines = [ PoolVector2Array( 1790.71, 91.3605, 1711.14, 132.074, 1696.33, 209.8, 1744.45, 263.468, 1757.4, 270.87, 1731.49, 435.576, 1638.96, 463.335, 1539.03, 537.359, 1487.21, 652.098, 1494.61, 779.79, 1511.27, 833.458, 1226.27, 925.989, 1185.56, 888.977, 915.371, 933.392, 830.202, 733.868, 859.423, 733.868, 952.928, 646.208, 997.732, 537.118, 978.252, 435.821, 984.096, 410.497, 999.68, 412.445, 1206.17, 291.668, 1266.56, 332.576, 1221.75, 562.443, 1188.64, 585.819, 1182.79, 632.571, 1212.01, 655.948, 1252.92, 661.792, 1280.19, 638.415, 1291.88, 607.247, 1256.82, 548.807, 1309.42, 336.473, 1356.17, 342.317, 1439.93, 281.928, 1465.26, 192.319, 1422.4, 96.8662, 1334.74, 38.4257, 1229.55, 67.6459, 1188.64, 147.515, 1182.79, 246.864, 1180.85, 258.552, 958.772, 387.121, 886.695, 320.888, 781.502, 291.668, 662.673, 320.888, 613.972, 350.109, 436.703, 200.111, 462.027, 170.891, 475.663, 81.2821, 411.378, 7.25735, 313.977, 13.1014, 56.8389, 346.213, 49.0469, 424.133, 95.7993, 488.418, 148.396, 511.794, 169.824, 692.96, 130.864, 763.089, 134.76, 881.918, 200.992, 950.098, 296.445, 973.475, 372.418, 942.306, 514.623, 1061.14, 892.539, 1033.86, 933.447, 1065.03, 1192.53, 1026.07, 1225.65, 1002.69, 1247.08, 953.995, 1537.33, 866.334, 1615.25, 928.67, 1728.24, 959.839, 1849.02, 934.514, 1944.47, 854.646, 1995.12, 735.816, 1965.9, 587.767, 1872.39, 484.522, 1773.04, 443.614, 1765.25, 428.029, 1794.47, 262.448, 1821.74, 258.552, 1868.5, 219.591, 1868.5, 159.203, 1827.59, 110.502 ), PoolVector2Array( 399.69, 227.383, 436.703, 239.072, 598.388, 383.225, 563.324, 422.185, 549.688, 539.066, 584.752, 642.311, 652.933, 712.44, 763.97, 743.608, 795.138, 743.608, 812.67, 753.349, 900.331, 979.319, 873.059, 1000.75, 530.208, 1028.02, 403.586, 905.294, 432.807, 827.373, 405.534, 718.284, 319.821, 661.792, 208.784, 665.688, 193.2, 488.418, 226.317, 480.626 ) ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 200
+font_data = ExtResource( 7 )
+
+[node name="Root" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Map" parent="." instance=ExtResource( 9 )]
+position = Vector2( 937.048, 531.602 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="NavMap" type="Navigation2D" parent="."]
+visible = false
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="NavMap"]
+navpoly = SubResource( 1 )
+
+[node name="Crack" parent="." instance=ExtResource( 3 )]
+position = Vector2( 284.591, 298.64 )
+
+[node name="Resource" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1671.87, 730.147 )
+
+[node name="Resource2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1309.95, 182.313 )
+
+[node name="Resource4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 272.257, 196.261 )
+
+[node name="Resource3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 253.125, 824.907 )
+
+[node name="Crack2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 670.087, 591.934 )
+
+[node name="Crack4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1094.09, 965.728 )
+
+[node name="Crack5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1777.52, 181.876 )
+
+[node name="Crack3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1268.94, 332.926 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 789.376, 559.633 )
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="MainScree" type="Node2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="MainScree"]
+margin_left = -978.0
+margin_top = -641.0
+margin_right = 3221.0
+margin_bottom = 1737.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite" type="Sprite" parent="MainScree"]
+script = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MainScree"]
+margin_left = 311.151
+margin_top = 361.608
+margin_right = 1599.15
+margin_bottom = 585.608
+custom_fonts/font = SubResource( 2 )
+text = "GAME OVER"
+__meta__ = {
+"_edit_use_anchors_": false
+}

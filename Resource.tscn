@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Resource.cs" type="Script" id=2]
+[ext_resource path="res://ResourceInfo.cs" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 66.5353
+
+[sub_resource type="Animation" id=2]
+resource_name = "show"
+length = 4.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -50.1053, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sprite:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.93, -0.00389302, -0.00494146, -0.25, 0.273091, 0.29, -0.301996, -1, -0.9, 0.0233417, 0.88, -0.0276153, 1e-05, -0.25, 0, 0.25, 0, 1, -0.87, 0.0325049, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2, 3, 4 )
+}
+
+[node name="Resource" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -17.1683 )
+scale = Vector2( 0.659008, 1 )
+texture = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+position = Vector2( -0.978271, -1.19979 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "show"
+method_call_mode = 1
+anims/show = SubResource( 2 )
